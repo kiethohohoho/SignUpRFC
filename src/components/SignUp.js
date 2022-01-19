@@ -44,6 +44,35 @@ export default function SignIn() {
               <TextField
                 margin="normal"
                 required
+                name="dateOfBirth"
+                label="Ngày sinh nhật"
+                type="date"
+                InputLabelProps={{ shrink: true }}
+                id="dateOfBirth"
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Nhập mật khẩu"
+                type="password"
+                id="password"
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Nhập lại mật khẩu"
+                type="password"
+                id="password"
+              />
+            </Grid>
+            <Grid container item xs={6} direction="column">
+              <TextField
+                margin="normal"
+                required
                 fullWidth
                 name="email"
                 label="Nhập địa chỉ email"
@@ -69,34 +98,19 @@ export default function SignIn() {
                   ),
                 }}
               />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Nhập mật khẩu"
-                type="password"
-                id="password"
-              />
-            </Grid>
-            <Grid container item xs={6} direction="column">
               <FormControl fullWidth margin="normal">
                 <InputLabel id="male-label">Giới tính</InputLabel>
-                <Select required labelId="male-label" id="male" name="male">
+                <Select
+                  required
+                  labelId="male-label"
+                  id="male"
+                  name="male"
+                  label="Giới tính"
+                >
                   <MenuItem value="Nam">Nam</MenuItem>
                   <MenuItem value="Nữ">Nữ</MenuItem>
                 </Select>
               </FormControl>
-
-              <TextField
-                margin="normal"
-                required
-                name="dateOfBirth"
-                label="Ngày sinh nhật"
-                type="date"
-                InputLabelProps={{ shrink: true }}
-                id="dateOfBirth"
-              />
               <TextField
                 margin="normal"
                 required
@@ -110,9 +124,9 @@ export default function SignIn() {
 
           <div
             style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
