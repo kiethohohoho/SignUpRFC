@@ -14,7 +14,7 @@ import Select from "@mui/material/Select";
 
 export default function SignIn() {
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="lg">
       <Box
         sx={{
           marginTop: 4,
@@ -30,8 +30,8 @@ export default function SignIn() {
           Đăng ký tài khoản
         </Typography>
         <Box component="form" sx={{ mt: 1 }}>
-          <Grid container spacing={2} width={800}>
-            <Grid container item xs={6} direction="column">
+          <Grid container spacing={2} width={{lg: 800}}>
+            <Grid container item lg={6} sm={12} direction="column">
               <TextField
                 margin="normal"
                 required
@@ -69,7 +69,7 @@ export default function SignIn() {
                 id="password"
               />
             </Grid>
-            <Grid container item xs={6} direction="column">
+            <Grid container item lg={6} sm={12} direction="column">
               <TextField
                 margin="normal"
                 required
@@ -91,7 +91,7 @@ export default function SignIn() {
                     <Button
                       endIcon={<SendIcon />}
                       variant="contained"
-                      sx={{ width: 150 }}
+                      sx={{ width: 150}}
                     >
                       Gửi mã
                     </Button>
