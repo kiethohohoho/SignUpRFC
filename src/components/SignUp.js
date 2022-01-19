@@ -92,6 +92,7 @@ export default function SignIn() {
                       endIcon={<SendIcon />}
                       variant="contained"
                       sx={{ width: 150}}
+                      size="small"
                     >
                       Gửi mã
                     </Button>
