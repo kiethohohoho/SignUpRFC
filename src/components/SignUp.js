@@ -108,13 +108,17 @@ export default function SignIn() {
             </Grid>
           </Grid>
 
-          <Button
-            type="submit"
-            variant="contained"
-            sx={{ mt: 3, mb: 2, ml: 40 }}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
           >
-            Đăng ký tài khoản
-          </Button>
+            <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
+              Đăng ký tài khoản
+            </Button>
+          </div>
         </Box>
       </Box>
     </Container>
